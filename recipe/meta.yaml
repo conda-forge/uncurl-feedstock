@@ -1,5 +1,5 @@
 {% set name = "uncurl" %}
-{% set version = "0.0.10" %}
+{% set version = "0.0.11" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 636ee68d7d837cadb2d6c50f1d47de4053c8701b969cbea87654d89edb3e79a6
+  sha256: 530c9bbd4d118f4cde6194165ff484cc25b0661cd256f19e9d5fcb53fc077790
 
 build:
   number: 0
@@ -20,11 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
+    - pyperclip
     - six
-    - xerox
 
 test:
   imports:
