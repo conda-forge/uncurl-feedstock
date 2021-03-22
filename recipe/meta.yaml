@@ -23,8 +23,8 @@ requirements:
     - python
   run:
     - python
+    - pyperclip
     - six
-    - xerox
 
 test:
   imports:
